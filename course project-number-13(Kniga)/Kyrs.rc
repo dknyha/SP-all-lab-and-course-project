@@ -1,0 +1,21 @@
+#define IDD_DLG 10
+#define IDC_Edit 11
+#define IDC_Revers 12
+#define IDC_Close 13
+#define IDC_STC 14
+
+#include "/masm64/include64/resource.h"
+
+10 ICON DISCARDABLE "icon.ico"
+
+IDD_DLG DIALOGEX 0,-12,165,45
+CAPTION "Виведення тексту у зворотньому порядку"
+FONT 10,"Segoe UI",400,0,0
+STYLE WS_POPUP|WS_VISIBLE|WS_CAPTION|WS_SYSMENU|DS_CENTER
+BEGIN
+  CONTROL "",IDC_Edit,"Edit",WS_CHILDWINDOW|WS_VISIBLE|WS_TABSTOP,9,12,145,10,WS_EX_CLIENTEDGE
+  CONTROL "Виконати",IDC_Revers,"Button",WS_CHILDWINDOW|WS_VISIBLE|WS_TABSTOP,15,27,50,12
+  CONTROL "Закрити вікно",IDC_Close,"Button",WS_CHILDWINDOW|WS_VISIBLE|WS_TABSTOP,99,27,50,12
+  CONTROL "Поле введення",IDC_STC,"Static",WS_CHILDWINDOW|WS_VISIBLE,15,3,87,9
+END
+

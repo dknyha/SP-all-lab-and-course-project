@@ -1,0 +1,42 @@
+#define IDM_Prog 10001
+#define IDM_Help 10006
+#define IDM_Regime 10001
+#define IDM_Scale 10009
+#define IDR_MENU1 10000
+#define IDM_Function 10002
+#define IDM_Clear 10003
+#define IDM_Exit 10004
+#define IDM_S1 10010
+#define IDM_S2 10011
+#define IDM_S3 10012
+#define IDM_S4 10013
+#define IDM_Condition 10007
+#define IDM_Avtor 10008
+
+#include "D:/masm64/include64/Resource.h"
+
+IDI_ICON ICON DISCARDABLE "smail1.ico"
+10 ICON DISCARDABLE "smail1.ico"
+
+IDR_MENU1 MENU
+BEGIN
+  POPUP "Програма"
+  BEGIN
+    MENUITEM "Намалювати",IDM_Function
+    MENUITEM "Очистити",IDM_Clear
+    MENUITEM "Вихід",IDM_Exit
+  END
+  POPUP "Фокус"
+  BEGIN
+    MENUITEM "1",IDM_S1
+    MENUITEM "2",IDM_S2
+    MENUITEM "3",IDM_S3
+    MENUITEM "4",IDM_S4
+  END
+  POPUP "Help"
+  BEGIN
+    MENUITEM "Умова",IDM_Condition
+    MENUITEM "Про автора",IDM_Avtor
+  END
+END
+
